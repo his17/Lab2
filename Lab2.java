@@ -18,16 +18,17 @@ public class Lab2 {
 	
 	boolean manGoingToStIves = true;
 
-	int numWives = 8;
+	int numWives = 7;
 
-	int numSacksPerWife = 7;
-	int numSacks = numWives * numSacksPerWife;
+	int numSacksPerWife = 7 * numWives;
 	
-	int numCatsPerSack = 7;
-	int numCats = numSacks * numCatsPerSack;
+	int numCatsPerSack = 7 * numSacksPerWife;
 
-	int numKitsPerCat = 7;
-	int numKits = numCats * numKitsPerCat;
+	int numKitsPerCat = 7 * numCatsPerSack;
+
+	int narrator = 1;
+	int man = 1;
+
 
         int total;
 
@@ -42,7 +43,7 @@ public class Lab2 {
 	    // with the narrator.
 	    // Calculate the number going to St. Ives
      
-	    total = numWives + numSacks + numCats + numKits;
+	    total = numWives + numSacksPerWife + numCatsPerSack + numKitsPerCat + narrator + man;
 	    System.out.println("Number going to St. Ives is " + total);
 	} else {
 	    // Otherwise, only the narrator is going!
